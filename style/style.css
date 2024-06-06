@@ -1,0 +1,119 @@
+/* Estilo del cuerpo de la página */
+body {
+    background-color: #1a1a1a; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para títulos */
+h1, h2 {
+    color: #ff9900; /* Títulos en color naranja */
+}
+
+/* Estilo para subtítulos */
+h2 {
+    font-weight: bold;
+}
+
+/* Estilo para texto genérico */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+
+/* Estilo para inputs de texto y números */
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    margin: 1%;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #333333; /* Fondo oscuro para inputs */
+    color: #ffffff; /* Texto blanco */
+}
+
+select{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.mainDiv {
+    width: 90%;
+    text-align: center;
+}
+
+.conteiner {
+    border-width: 2px;
+    border-color: #28a745;
+    border-style: solid;
+    padding-bottom: 2%;
+    margin: 2%;
+}
+
+/* Estilo para botones */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Azul brillante */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+/* Estilo para botones de aprobación */
+.button-approve {
+    background-color: #28a745; /* Verde */
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+    
+}
+
+/* Estilo para botones de cancelación */
+.button-cancel {
+    background-color: #dc3545; /* Rojo */
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-contenido {
+    background-color: #fff;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}

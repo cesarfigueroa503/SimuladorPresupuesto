@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+    <link rel="stylesheet" href="style/style.css">
+    
+</head>
+<body>
+    <div class="mainDiv">
+        
+        <h1>Simulador de Presupuesto</h1>
+        <p>
+        Bienvenido a la simulacion de presupuesto, por favor para continuar con la sumulacion
+        llene las siguientes campos.
+        </p>
+        <hr>
+        <div class="ingreso">
+            <p>Selecione el tiempo para su presupuesto</p>
+            <select id="selectTime" name="mi_menu" style="width: 30vw; background-color: darkblue; color: white;">
+                <option value="1">Diario</option>
+                <option value="2">Semanal</option>
+                <option value="3">Mensual</option>
+                <option value="4">Anual</option>
+            </select>
+            
+            
+        </div>
+
+        <hr>
+
+        <div id="Form" style="display: block;">
+            <div>
+                <div class="conteiner">
+                    <h2>Cuales son sus ingresos?</h2>
+                    <div id="ingresos">
+                        
+                    </div>
+                    <div style="padding: 5%;">
+                        <button id="addButton1" class="button">+Agregar nuevo elemento</button>
+                        <button id="popButton1" class="button-cancel" data-info="1">-Quitar Ultimo</button>
+                        
+                    </div>
+                    
+                </div>
+                <div class="conteiner">
+                    <h2>Caules son sus gastos??</h2>
+                    <div id="gastos">
+                        
+                    </div>
+                    <div style="padding: 5%;">
+                        <button id="addButton2" class="button">+Agregar nuevo elemento</button>
+                        <button id="popButton2" class="button-cancel" data-info="2">-Quitar Ultimo</button>
+                        
+                    </div>
+                    
+                   
+                
+                </div>
+            </div>
+            <button 
+                id='Simular' 
+                class="button-approve" 
+                style="position: absolute; top: 40%; left:85%; height: 50vh; 
+                background-color:blueviolet">
+                Simular
+            </button>
+        </div>
+
+        <div class="modal" id="resultModal">
+            <div class="modal-contenido">
+                <h3>Este es su presupuesto para cada aspecto:</h3>
+                <div id="result">
+
+                </div>
+                <button id="cerrarModal" class="button-cancel">Cerrar</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/action.js"></script>
+    <script src="js/modalController.js"></script>
+
+
+</body>
+</html>
